@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap');
+
+:root {
+
+    --background-color: #333647;
+    --pink-color:#7FC0C2;
+    --secondary-color:#bbbbbbbb;
+    --third-color:#00FFFF;
+
+}
+
+*{
+
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+
+
+    background-color: var(--background-color);
+
+}
+
+h1,h2,h3,h3,h4,h5,p,span,p,a{
+    cursor:pointer;
+}
+
+
+/* navbar */
+
+.nav_section .navbar-brand {
+
+    font-size: 22px;    
+
+}
+
+.nav_section .navbar-brand span {
+
+   color: var(--pink-color);
+
+}
+
+.nav_section .navbar-nav li{
+
+    margin: 0px 8px;
+
+}
+
+.navbar-nav li a{
+
+    color: aqua !important;
+    font-size: 15px;
+}
+
+
+ .nav-link::before{
+
+    
+    width: 0px;
+    height: 0px;
+    
+    position: absolute;
+    bottom: 7px;
+    transition: 0.5s;   
+
+}
+
+.navbar-nav .nav-link:hover::before{
+
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: var(--pink-color);
+    position: absolute;
+    bottom: 7px;
+    transition: 0.5s;
+    
+
+
+}
+
+
+/* hero section */
+
+.hero-section .row{
+
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.hero-section .row h1,h2,h3,p{
+    color: #64A8C1;
+}
+
+.hero-section .row h3{
+    font-size: 19px;
+    color: rgb(206 239 255);
+    font-weight: 300;
+    margin-bottom: 15px;
+    
+}
+
+.hero-section .row h3::after{
+
+    
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    width: 90px;
+    height: 2px;
+    background-color: #fff;
+    margin-left: 6px;
+}
+
+.hero-section .row h1{
+
+    font-size: 65px;
+    font-weight: 800px;
+
+}
+
+.hero-section .row h2{
+    
+    font-size: 20px;
+    font-weight: 100px;
+    margin:8px 0px;
+}
+
+.hero-section .row p{
+    
+    font-size: 13px;
+    margin-top:13px;
+    line-height: 21px;
+    color: var(--secondary-color);
+}
+
+.hero-section .row button{
+
+    border-radius: 10px;
+    font-size: 19px;
+    color: white;
+    background-color:var(--pink-color);
+    border:3px solid var(--pink-color);
+    width: 110px;
+    font-family: 'Poppins',sans-serif;
+
+}
+
+.hero-section .row button:hover{
+    animation:swing;
+    animation-duration: 0.5s;
+    background-color: white;
+    color: black;
+    border-color: white
+}
+
+
+.hero-section .row img{
+
+    width: 80%;
+}
+
+.particles-js-canvas-el{
+
+    position: absolute;
+    height: 100% !important;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1000;
+}
+
+
+
+/* about section */
+
+.about {
+    height: 60vh;
+    margin-top: 15px 15px;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive */
+@media (max-width:1200px) and (min-width:900px){
+    .hero-section .row h1{
+        font-size: 50px;
+    }
+}
+
+@media (max-width:900px) and (min-width:699px){
+    .hero-section .row h1{
+        font-size: 40px;
+    }
+
+    .hero-section .row h2{
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width:700px) and (min-width:500px){
+    .hero-section .row h1{
+        font-size: 30px;
+    }
+
+    .hero-section .row h2{
+        font-size: 20px;
+    }
+    .hero-section .row p{
+        font-size: 15px;
+    }
+
+
+}
+
+.btn-primary{
+
+    color: rgb(11, 91, 196); 
+    background:#7FC0C2;
+    font-family: 'Poppins', sans-serif; 
+    border-radius: 15%;
+
+}
+
+.btn-secondary{
+
+    color: var(--third-color);
+    background-color:var(--pink-color);
+     margin: 5px;
+     display: ;
+
+  
+
+}
+
+.btn-secondary:hover{
+    background-color:#7FC0C2;
+    animation:heartBeat;
+    border-left: 2px solid aqua;
+    animation-duration:1s;
+    
+    
+  
+   
+     
+}
+
+
+
+
+
+
+
+/* progressbar */
+
+.progress-bar{
+    background-color:var(--pink-color) !important;
+}
+
+
+
+/* foooter-section */
+
+.footer-section{
+
+    height: 150px;
+    width: auto;
+    background-color:var(--pink-color);
+    opacity: 70%;
+    margin-top: 45px;
+    text-align: center;
+    
+}
+
+.skill-section{
+
+    height: 50vh;
+    margin-top: 40px;
+
+
+}
+
+.blog-section {
+
+    height: 60vh;
+    margin-top: 300px;
+
+}
+
+.portfolio-section {
+    height: 60vh;
+    margin-top: 45px;
+}
+
+.contact-section{
+
+    height: 60vh;
+    margin-top: 45px;
+}
+
+
+
+
+
+
+
+
+
+
+
